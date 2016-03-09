@@ -11,7 +11,7 @@ Please also take note of the general information on the
 --------------------------------------------
 
 ### <a id="get-preferences"> Get Preferences
-_GET /accounts/[\{account-id\}](../../../Documentation/rest-api-accounts.html#account-id)/@PLUGIN@~preferences_
+__GET__ /accounts/{account-id}/@PLUGIN@~preferences
 
 Gets the preferences of a user for the @PLUGIN@ plugin.
 
@@ -38,11 +38,11 @@ that contains the preferences of a user for the @PLUGIN@ plugin.
 ```
 
 ### <a id="put-preferences"> Put Preferences
-_PUT /accounts/[\{account-id\}](../../../Documentation/rest-api-accounts.html#account-id)/@PLUGIN@~preferences_
+__PUT__ /accounts/{account-id}/@PLUGIN@~preferences
 
 Sets the user preferences for the @PLUGIN@ plugin.
 
-The new preferences must be specified as a [PreferenceInfo](#preference-info)
+The new preferences must be specified as a [PreferenceInfo](#preferences-info)
 entity in the request body. Not setting a parameter means that the
 parameters are set to the defaults.
 
